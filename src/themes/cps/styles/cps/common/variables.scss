@@ -1,0 +1,65 @@
+@import './fonts.scss';
+
+$cpsBaseUnit: rem;
+
+$cpsWrapperPaddingX: 29.375; // Value in rem unit WITHOUT rem
+$cpsWrapperPaddingXMobile: 1.875;
+
+$cpsHoverOpacity: 20; // Value in percentage WITHOUT %
+$cpsOverlayOpacity: 40;
+
+$cpsBaseColor1: #d95426;
+$cpsBaseColor2: #2c2c2c;
+
+$cpsInteractionColor1: #d95426;
+$cpsInteractionColor2: #af441f; // Current - Marker
+$cpsInteractionColor3: #c56f51; // Highlight - Hover
+
+$cpsBackgroundColor1: #ffffff;
+$cpsBackgroundColor2: #e6e6e6;
+$cpsBackgroundColor3: $cpsBaseColor2;
+
+$cpsForegroundColor1: $cpsBaseColor1;
+$cpsForegroundColor2: $cpsInteractionColor1;
+$cpsForegroundColor3: $cpsBackgroundColor1;
+$cpsForegroundColor4: #d4d4d4;
+$cpsForegroundColorCaption: #818181;
+
+:root {
+    --cps-wrapper-padding-x: #{$cpsWrapperPaddingX}#{$cpsBaseUnit};
+    --cps-wrapper-padding-x-mobile: #{$cpsWrapperPaddingXMobile}#{$cpsBaseUnit};
+
+    --cps-hover-opacity: calc(#{$cpsHoverOpacity} / 100);
+    --cps-overlay-opacity: calc(#{$cpsOverlayOpacity} / 100);
+
+    --cps-base-color-1: #{$cpsBaseColor1};
+    --cps-base-color-2: #{$cpsBaseColor2};
+
+    --cps-interaction-color-1: #{$cpsInteractionColor1};
+    --cps-interaction-color-2: #{$cpsInteractionColor2};
+    --cps-interaction-color-3: #{$cpsInteractionColor3};
+
+    --cps-background-color-1: #{$cpsBackgroundColor1};
+    --cps-background-color-2: #{$cpsBackgroundColor2};
+    --cps-background-color-3: #{$cpsBackgroundColor3};
+
+    --cps-text-color-1: #{$cpsForegroundColor1};
+    --cps-text-color-2: #{$cpsForegroundColor2};
+    --cps-text-color-3: #{$cpsForegroundColor3};
+    --cps-text-color-4: #{$cpsForegroundColor4};
+    --cps-text-color-caption: #{$cpsForegroundColorCaption};
+
+    --cps-font-family: #{$cpsFontFamily};
+
+    --cps-font-size-title: #{$cpsFontSizeTitle}#{$cpsBaseUnit};
+    --cps-font-size-heading-1: #{$cpsFontSizeHeading1}#{$cpsBaseUnit};
+    --cps-font-size-heading-2: #{$cpsFontSizeHeading2}#{$cpsBaseUnit};
+    --cps-font-size-heading-3: #{$cpsFontSizeHeading3}#{$cpsBaseUnit};
+    --cps-font-size-paragraph: #{$cpsFontSizeParagraph}#{$cpsBaseUnit};
+    --cps-font-size-caption: #{$cpsFontSizeCaption}#{$cpsBaseUnit};
+
+    --cps-font-weight-bold: #{$cpsFontWeightBold};
+    --cps-font-weight-semibold: #{$cpsFontWeightSemiBold};
+    --cps-font-weight-regular: #{$cpsFontWeightRegular};
+    --cps-font-weight-light: #{$cpsFontWeightLight};
+}

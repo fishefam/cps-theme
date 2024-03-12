@@ -1,0 +1,46 @@
+@import './fonts.scss';
+
+@mixin ForeBackground($bg, $fg) {
+    background-color: $bg;
+    color: $fg;
+}
+@mixin ForeBackgroundPrimary {
+    @include ForeBackground(var(--cps-base-color-2), var(--cps-background-color-1));
+}
+@mixin ForeBackgroundSecondary {
+    @include ForeBackground(var(--cps-base-color-2), var(--cps-background-color-2));
+}
+@mixin ForeBackgroundFeature1 {
+    @include ForeBackground(var(--cps-base-color-1), var(--cps-base-color-2));
+}
+@mixin ForeBackgroundFeature2 {
+    @include ForeBackground(var(--cps-background-color-1), var(--cps-base-color-2));
+}
+
+@mixin Font($Family: var(--cps-font-family), $Size: var(--cps-font-size-paragraph), $Weight: var(--cps-font-weight-regular)) {
+    font-family: $Family;
+    font-size: $Size;
+    font-weight: $Weight;
+}
+@mixin FontTitle {
+    @include Font($Size: var(--cps-font-size-title), $Weight: var(--cps-font-weight-bold));
+    text-transform: uppercase;
+}
+@mixin FontHeading1 {
+    @include Font($Size: var(--cps-font-size-heading-1), $Weight: var(--cps-font-weight-bold));
+}
+@mixin FontHeading2 {
+    @include Font($Size: var(--cps-font-size-heading-2), $Weight: var(--cps-font-weight-bold));
+    text-transform: uppercase;
+}
+@mixin FontHeading3 {
+    @include Font($Size: var(--cps-font-size-heading-3), $Weight: var(--cps-font-weight-bold));
+    text-transform: uppercase;
+}
+@mixin FontParagraph {
+    @include Font($Size: var(--cps-font-size-paragraph), $Weight: var(--cps-font-weight-regular));
+}
+@mixin FontCaption {
+    @include Font($Size: var(--cps-font-size-caption), $Weight: var(--cps-font-weight-regular));
+    color: var(--cps-text-color-caption);
+}
